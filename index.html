@@ -114,42 +114,50 @@
     </div>
     <form id="movie-form" novalidate>
       <div class="form-grid">
-        <label for="title">Title
+        <div>
+          <label for="title">Title</label>
           <input id="title" name="title" maxlength="120" required autofocus aria-describedby="title-error">
           <small class="error" id="title-error" hidden></small>
-        </label>
-        <label for="director">Director
+        </div>
+        <div>
+          <label for="director">Director</label>
           <input id="director" name="director" maxlength="120" required aria-describedby="director-error">
           <small class="error" id="director-error" hidden></small>
-        </label>
-        <label for="genre">Genre
+        </div>
+        <div>
+          <label for="genre">Genre</label>
           <select id="genre" name="genre" required aria-describedby="genre-error"><option value="">Select genre</option></select>
           <small class="error" id="genre-error" hidden></small>
-        </label>
-        <label for="rating">Rating
+        </div>
+        <div>
+          <label for="rating">Rating</label>
           <select id="rating" name="rating" required aria-describedby="rating-error">
             <option value="">Select rating</option>
             <option value="1">1 / 5</option><option value="2">2 / 5</option><option value="3">3 / 5</option>
             <option value="4">4 / 5</option><option value="5">5 / 5</option>
           </select>
           <small class="error" id="rating-error" hidden></small>
-        </label>
-        <label for="year">Release year
+        </div>
+        <div>
+          <label for="year">Release year</label>
           <input id="year" name="year" type="number" min="1900" step="1" required aria-describedby="year-error">
           <small class="error" id="year-error" hidden></small>
-        </label>
-        <label for="duration">Duration (minutes)
+        </div>
+        <div>
+          <label for="duration">Duration (minutes)</label>
           <input id="duration" name="duration" type="number" min="1" step="1" required aria-describedby="duration-error">
           <small class="error" id="duration-error" hidden></small>
-        </label>
-        <label class="full-width" for="image">Poster URL
+        </div>
+        <div class="full-width">
+          <label for="image">Poster URL</label>
           <input id="image" name="image" type="url" placeholder="https://example.com/poster.jpg" maxlength="2000" required aria-describedby="image-error">
           <small class="error" id="image-error" hidden></small>
-        </label>
-        <label class="full-width" for="description">Description
+        </div>
+        <div class="full-width">
+          <label for="description">Description</label>
           <textarea id="description" name="description" rows="3" maxlength="1200" required aria-describedby="description-error"></textarea>
           <small class="error" id="description-error" hidden></small>
-        </label>
+        </div>
       </div>
       <p id="form-status" class="error" role="alert" hidden></p>
       <div class="actions">
