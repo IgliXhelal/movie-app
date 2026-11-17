@@ -262,5 +262,11 @@ search.addEventListener('input', () => {
   searchTimer = setTimeout(renderCatalog, 180);
 });
 genreFilter.addEventListener('change', renderCatalog);
+document.querySelector('.skip-link').addEventListener('click', event => {
+  event.preventDefault();
+  const main = byId('main');
+  main.focus();
+  main.scrollIntoView();
+});
 window.addEventListener('hashchange', render);
 render();
