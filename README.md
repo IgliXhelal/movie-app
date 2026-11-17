@@ -2,6 +2,8 @@
 
 A browser-based movie collection for the Web Technologies and Programming course. Browse the 20 movies from the original project, search by title or director, filter by genre, and view film details. Use **Manage** to add, edit, or delete movies and see the collection's rating and genre breakdown.
 
+[Live site on Cloudflare Pages](https://movie-app-dt7.pages.dev/)
+
 ## Run the project
 
 Open `index.html` or serve this directory with VS Code Live Server. The project uses plain HTML, CSS, and JavaScript. It requires no build, server, database, account, or API key. The original HTTPS poster links are used for images, with a placeholder if an image is unavailable.
